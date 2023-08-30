@@ -1,0 +1,256 @@
+body, html{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    position: relative;
+    padding: 50px 100px;
+
+}
+header h2{
+    display: none;
+}
+#about h3{
+    display: none;
+}
+#about p{
+  
+    margin-bottom: 120px;
+    margin-right: 35%;
+    opacity: 50%;
+}
+
+
+hgroup h1{
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+img{
+    position: absolute;
+    right: 250px;
+    top:50px;
+    transform: rotate(-15deg);
+    width: 14%;
+}
+h4{
+    margin: 0;
+}
+section{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 50px;
+
+
+}
+section h3{
+    grid-row: 1/ span 2;
+    width: 130px;
+    margin: 0px;
+    border-right:1px solid black;
+    font-style: italic;
+
+
+}
+.skills{
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    gap: 15px;
+    margin-left: 10px;
+    color: white;
+}
+.skill{
+    padding: 10px;
+    background-color: #0d6666;
+    margin: 5px 0px;
+    width: 15%;
+}
+.skills-primary{
+    font-size: 20px;
+
+}
+.skills-secondary{
+    font-size: 10px;
+}
+.skill[data-skill="5"] span::after{
+    content: "\2605\2605\2605";
+    width: auto;
+    height:auto;
+    display: inline-block;
+    color: white;
+}
+.skill[data-skill="3"] span::after{
+    content: "\2605\2605";
+    width: auto;
+    height:auto;
+    display: inline-block;
+    color: white;
+}
+.skill[data-skill="1"] span::after{
+    content: "\2605";
+    width: auto;
+    height:auto;
+    display: inline-block;
+    color: white;
+}
+.skill[data-skill="9"] span::after{
+    content: "\2605\2605\2605\2605\2605";
+    width: auto;
+    height:auto;
+    display: inline-block;
+    color: white;
+}
+.skill[data-skill="7"] span::after{
+    content: "\2605\2605\2605\2605";
+    width: auto;
+    height:auto;
+    display: inline-block;
+    color: white;
+}
+.skill span{
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 0px 10px 10px;
+    line-height: 1.5;
+    margin: 0px;
+
+}
+.experience-details{
+    font-size: 15px;
+    color: gray;
+}
+.experience-institution{
+    display: none;
+}
+.experience-type{
+    color: #008080;
+}
+#hobbies ul{
+    margin: 0;
+}
+#contact h3, .contact-skype , .contact-type, .contact-skype dd{
+display:none;
+}
+#contact{
+    display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+    align-items: baseline;
+}
+.contacts{
+    display: flex;
+    margin-bottom: 0px;
+    align-items: baseline;
+}
+.contact-github a{
+content: url(../public/images/github.png);
+width: 60px;
+height: 60px;
+}
+.contact-phone a{
+    content: url(../public/images/phone.png);
+    width: 60px;
+    height: 60px;
+}
+.contact-email a{
+    content: url(../public/images/email.png);
+    width: 60px;
+    height: 60px;
+}
+.contact-facebook a{
+    content: url(../public/images/facebook.png);
+    width: 60px;
+    height: 60px;
+}
+
+@media all and (min-width:1100px){
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto 1fr;
+        margin-bottom: 50px;
+    }
+    section h3{
+        grid-row: 1/ span 2;
+        width: 130px;
+        margin: 0;
+        border-right: 1px solid black;
+    }
+    }
+    /* ///////////////////////////////////////////// */
+    @media all and (max-width:1099px){
+    figure img {
+        display: none;
+    }
+    body,html{
+        margin: 10px;
+        padding: 0px;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: column;   
+        
+    }
+    #about{
+        width: 130%;
+    }
+    section h3{
+        border-bottom: 1px solid black;
+        border-right: 0px;
+
+    }
+    .experience{
+        display: flex;
+        flex-direction: row;
+    }
+    #contact{
+     display: flex;
+     padding-right: 50px;
+     flex-direction: row;
+    }
+    .skills{
+        width: 100%;
+    }
+    .skill{
+        width: 100%;
+    }
+    .experience{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #hobbies ul{
+        margin-top: 20px;
+    }
+    .skills-primary{
+        margin-top: 20px;
+    }
+    .contacts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contact-github{
+        width: 33.33%
+    }
+    .contact-email{
+        width: 33.33%;
+    }
+    .contact-phone{
+        width: 33.33%
+    }
+    .contact-facebook{
+        width: 100%
+    }
+    }
