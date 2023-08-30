@@ -155,22 +155,22 @@ display:none;
     align-items: baseline;
 }
 .contact-github a{
-content: url(../public/images/github.png);
+content: url(/public/images/github.png);
 width: 60px;
 height: 60px;
 }
 .contact-phone a{
-    content: url(../public/images/phone.png);
+    content: url(/public/images/phone.png);
     width: 60px;
     height: 60px;
 }
 .contact-email a{
-    content: url(../public/images/email.png);
+    content: url(/public/images/email.png);
     width: 60px;
     height: 60px;
 }
 .contact-facebook a{
-    content: url(../public/images/facebook.png);
+    content: url(/public/images/facebook.png);
     width: 60px;
     height: 60px;
 }

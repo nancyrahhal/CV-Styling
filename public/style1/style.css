@@ -235,5 +235,8 @@ h4{
     display: inline-block;
     border-bottom: 1px solid gray;
 }
+#hobbies{
+    width: 100%;
+}
 }
 
